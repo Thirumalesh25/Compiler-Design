@@ -22,7 +22,6 @@ public class Shift_Reduce {
 
         System.out.println("\nStack\tInputBuffer\tAction");
         String stk="";
-        int l=inp.length();
         while (true) {
             char ch = inp.charAt(0);
             stk += ch;
