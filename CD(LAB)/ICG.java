@@ -3,14 +3,22 @@ import java.util.*;
 public class ICG {
 
     static int val(char c) {
-        return switch (c) {
-            case '+', '-' -> 1;
-            case '*', '/' -> 2;
-            case '^' -> 3;
-            case '(' -> 4;
-            default -> -1;
-        };
+    switch (c) {
+        case '+':
+        case '-':
+            return 1;
+        case '*':
+        case '/':
+            return 2;
+        case '^':
+            return 3;
+        case '(':
+            return 4;
+        default:
+            return -1;
     }
+}
+
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
