@@ -57,11 +57,11 @@ class Predictive_Parser{
                 System.out.println("Not Accepted.");
                 break;
             }
-            System.out.println(stk+"\t\t"+inp+"\t\t"+c1+"->"+table[i1][i2]);
             stk=stk.substring(0,stk.length()-1);
             if(table[i1][i2].equals("@")) continue;
             StringBuilder sb=new StringBuilder(table[i1][i2]);
             stk+=sb.reverse().toString();
+            System.out.println(stk+"\t\t"+inp+"\t\t"+c1+"->"+table[i1][i2]);
         }
         if(stk.isEmpty()) System.out.println("Accepted.");
     }
