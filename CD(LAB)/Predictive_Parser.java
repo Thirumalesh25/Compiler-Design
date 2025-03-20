@@ -23,7 +23,7 @@ class Predictive_Parser{
             }
         }
         
-        System.out.println("OPERATOR PRECEDENCE TABLE : ");
+        System.out.println("PARSE TABLE : ");
         System.out.print("\t");
         for(int i=0;i<n2;i++){
             System.out.print(t.charAt(i)+"\t");
@@ -45,21 +45,18 @@ class Predictive_Parser{
         while(!stk.isEmpty()){
             String c1=stk.charAt(stk.length()-1)+"";
             String c2=inp.charAt(0)+"";
-            
             if(c1.equals(c2)){
                 inp=inp.substring(1);
                 stk=stk.substring(0,stk.length()-1);
                 System.out.println(stk+"\t\t"+inp+"\t\tPOP "+c1);
                 continue;
             }
-            
             int i1=nt.indexOf(c1);
             int i2=t.indexOf(c2);
             if(table[i1][i2].equals("X")){
                 System.out.println("Not Accepted.");
                 break;
             }
-            
             System.out.println(stk+"\t\t"+inp+"\t\t"+c1+"->"+table[i1][i2]);
             stk=stk.substring(0,stk.length()-1);
             if(table[i1][i2].equals("@")) continue;
