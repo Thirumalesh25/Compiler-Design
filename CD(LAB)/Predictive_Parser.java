@@ -9,7 +9,7 @@ class Predictive_Parser{
         System.out.print("Non-Terminals : ");
         String nt=sc.nextLine();
         
-        System.out.println("No.of Terminals : ");
+        System.out.print("No.of Terminals : ");
         int n2=sc.nextInt();
         sc.nextLine();
         System.out.print("Terminals : ");
