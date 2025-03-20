@@ -6,7 +6,7 @@ public class First {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("No. of productions: ");
+        System.out.print("No. of productions: ");
         int n = sc.nextInt();
         sc.nextLine(); 
         prod = new String[n];
