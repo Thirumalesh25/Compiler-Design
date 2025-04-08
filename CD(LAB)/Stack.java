@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Stack {
+public class Stack_Alloc {
 
 	public static void main(String[] args) {
 
