@@ -21,8 +21,8 @@ public class Left_Factoring {
         int h[]=new int[26];
         for (String i : p) {
             char ch = i.charAt(0);
-            if (ch >= 'A' && ch <= 'Z') 
-                h[ch-'A']++;
+            if (ch >= 'a' && ch <= 'z') 
+                h[ch-'a']++;
         }
         int maxi=0,ele=h[0];
         for(int i=1;i<26;i++){
@@ -32,7 +32,7 @@ public class Left_Factoring {
             System.out.println("Not Left Factoring.");
             return;
         }
-        char alpha = (char)('A'+maxi);
+        char alpha = (char)('a'+maxi);
         for (String i : p) {
             if (i.isEmpty()) continue;
             char ch = i.charAt(0);
