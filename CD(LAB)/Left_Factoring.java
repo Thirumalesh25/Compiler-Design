@@ -24,9 +24,9 @@ public class Left_Factoring {
             if (ch >= 'a' && ch <= 'z') 
                 h[ch-'a']++;
         }
-        int maxi=0,ele=h[0];
+        int maxi=0;
         for(int i=1;i<26;i++){
-            if(h[i]>ele) maxi=i;
+            if(h[i]>h[maxi]) maxi=i;
         }
         if (h[maxi]<=1) {
             System.out.println("Not Left Factoring.");
